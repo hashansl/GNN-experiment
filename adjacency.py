@@ -63,4 +63,4 @@ def process_county(state, county_stcnty, variable,data_path,filtration=None):
     county_list = adjacent_counties_df['county'].tolist()
     simplices = form_simplicial_complex(adjacent_counties_dict, county_list)
 
-    return simplices
+    return simplices, df_one_variable
